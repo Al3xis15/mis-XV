@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Invitación</title>
+	 <link href="css/bootstrap.min.css" rel="stylesheet">
+   
+
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    background-image: url("recursos/sin-texto.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+        .contenedor {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+   
+}
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #ff4d6d;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #ff2d55;
+        }
+		
+		/* Base para móviles */
+.contenedor {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    button {
+        font-size: 1.2rem;
+        padding: 12px 25px;
+    }
+}
+
+/* Computadoras */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .contenedor {
+        max-width: 800px;
+        margin: auto;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+      <h1> holaaa </h1>
+	  <button> es un botoon </button>
+
+    </div>
+
+ <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
