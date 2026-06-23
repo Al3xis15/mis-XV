@@ -22,7 +22,7 @@
 	font-family: 'TangerineBold', serif;
 }
 
-        .contenedor {
+.contenedor {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -30,9 +30,7 @@
     align-items: center;
     text-align: center;
     padding: 20px;
-    justify-content: space-between;
-	
-   
+    gap: 20px; /* mejor que space-between */
 }
 
         button {
@@ -48,11 +46,6 @@
             background: #ff2d55;
         }
 		
-		/* Base para móviles */
-.contenedor {
-    padding: 20px;
-    text-align: center;
-}
 
 /* Tablets */
 @media (min-width: 768px) {
@@ -85,7 +78,7 @@
 }
 
 .countdown {
-    font-size: 3.8rem;
+    font-size: 2rem;
     font-weight: bold;
     margin: 15px 0;
 }
@@ -140,9 +133,6 @@
     font-style: normal;
 }
 
-.contenedor {
-    font-size: 2.3rem;
-}
 
 .contenedor h1 {
     font-size: 4.8rem;
@@ -161,35 +151,39 @@
 }
 
 .contenedor button {
-    font-size: 2.9rem;
+    font-size: 2rem;
 }
 
 		@media (max-width: 768px) {
 
     .contenedor {
-        font-size: 1rem;
-        padding: 10px;
+        padding: 15px;
+        gap: 15px;
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
-    h2 {
-        font-size: 1rem;
+    h2, h3 {
+        font-size: 1.4rem;
     }
 
-    h3 {
+    p {
         font-size: 1rem;
     }
 
     .info-item a {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .icono-svg {
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .countdown {
+        font-size: 2rem;
     }
 }
     </style>
