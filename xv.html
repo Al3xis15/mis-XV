@@ -280,24 +280,21 @@ const countdown = setInterval(() => {
 
 
 
-	const musica = document.getElementById('musica');
+	const musica = document.getElementById("musica");
 
 function iniciarMusica() {
     musica.play()
         .then(() => {
-            console.log('Música iniciada');
+            console.log("Música iniciada");
         })
-        .catch(err => {
-            console.log('Bloqueada:', err);
+        .catch(error => {
+            console.log("Error:", error);
         });
 
-    document.removeEventListener('click', iniciarMusica);
-    document.removeEventListener('touchstart', iniciarMusica);
+    document.removeEventListener("pointerdown", iniciarMusica);
 }
 
-document.addEventListener('click', iniciarMusica, { once: true });
-document.addEventListener('touchstart', iniciarMusica, { once: true });
-
+document.addEventListener("pointerdown", iniciarMusica, { once: true });
 </script>
 
 	
