@@ -46,6 +46,25 @@ html, body {
     display: block;
 }
 
+.btn-confirmar{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    text-decoration: none;
+    color: white;
+
+    padding: 12px 24px;
+    border-radius: 50px;
+    background: #ff4d6d; /* tu color actual */
+}
+
+.icono-wa{
+    width: 30px;
+    height: 30px;
+}
+
 /* contenedor fila */
 .info-row{
     display: flex;
@@ -330,9 +349,10 @@ html, body {
 
 
 		<button id="btnMusica" type="button">
-		 Reproducir Musica
-         <img src="recursos/disco.svg" alt="" class="icono-musica">
-         <img src="recursos/nota.svg" alt="" class="icono-musica">
+			<img src="recursos/nota.svg" alt="" class="icono-musica">
+		    Reproducir Musica
+        
+            <img src="recursos/nota.svg" alt="" class="icono-musica">
         </button>
 
     <!-- UBICACIÓN -->
@@ -353,7 +373,12 @@ html, body {
     href="https://wa.me/5216633191218?text=Hola,%20confirmo%20mi%20asistencia%20al%20evento%20(:"
     target="_blank"
     class="btn-confirmar">
-     <button>Confirmar asistencia</button>
+
+    <button type="button">
+        <img src="recursos/wa.svg" alt="" class="icono-wa">
+        Confirmar asistencia por WhatsApp
+    </button>
+
 </a>
 
 <!-- ITINERARIO -->
